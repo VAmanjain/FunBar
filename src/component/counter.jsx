@@ -52,9 +52,9 @@ function Counter(){
 
                     <h2>My socials</h2>
                     <div className="socails">
-    <a href="">{<InstagramIcon/>}</a>
-    <a href="">{<LinkedInIcon/>}</a>
-    <a href="">{<GitHubIcon/>}</a>
+    <a href="https://instagram.com/iamanjain17?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank">{<InstagramIcon/>}</a>
+    <a href="https://www.linkedin.com/in/aman-jain-416321256" target="_blank">{<LinkedInIcon/>}</a>
+    <a href="https://github.com/VAmanjain" target="_blank">{<GitHubIcon/>}</a>
 
              </div>
                 </div>
