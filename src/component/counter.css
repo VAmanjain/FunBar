@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.counter{
+    display:grid ;
+    text-align: center;
+
+}
+.my{
+    width: 100;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.photo{
+    width: 50%;
+    height: 50vh;
+    position: relative;
+}
+img{
+ margin-top: 4rem;
+   width: 100%;
+   height: auto;
+}
+.count{
+    padding-top: 3rem;
+}
+
+.First , .Second{
+    background-color:aqua;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 1rem;
+border-radius: 50%;
+}
+.socails{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+}
+
+.socails>a{
+    padding: 1rem;
+}
