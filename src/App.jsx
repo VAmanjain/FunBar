@@ -1,15 +1,15 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import NavBar from "./component/navbar";
-import Counter from "./component/counter";
-import FirstComp from "./component/first-comp";
+import NavBar from "./component/Navbar/navbar";
+import Counter from "./component/About/counter";
+import FirstComp from "./component/Home/first-comp";
 
-import About from "./component/Rps";
+import About from "./component/Rps/Rps";
 
-import Tictac from "./component/tictac";
-import Card from "./component/card";
+import Tictac from "./component/TicTac/tictac";
+import Card from "./component/Card/card";
 
 function App() {
   return (

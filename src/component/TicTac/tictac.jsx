@@ -110,7 +110,7 @@ class tictac extends Component {
           </Link>
         </button>
           <button className="btnn-right btnn" id="btnn">
-          <Link to="/about">
+          <Link to="/card">
             Next
             <BiRightArrowAlt  className="icon"/>
           </Link>

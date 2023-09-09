@@ -97,7 +97,7 @@ class card extends Component {
         </div>
         {gameWon && <p>Congratulations! You've won the game!</p>}
         <button className="btnn-right btnn" id="btnn">
-          <Link to="/">
+          <Link to="/tictac">
             <BiLeftArrowAlt  className="icon"/> 
             Pervious
           </Link>
