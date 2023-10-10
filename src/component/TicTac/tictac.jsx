@@ -3,7 +3,10 @@ import "./tictac.css";
 import {BiRightArrowAlt} from "react-icons/bi";
 import {BiLeftArrowAlt} from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { grey } from "@mui/material/colors";
 class tictac extends Component {
+const 
+
   constructor() {
     super();
     this.state = {
@@ -77,9 +80,12 @@ class tictac extends Component {
     return (
       <div className="tictac">
         <div className="game">
-          <h1>Let's Play ,Tic-Tac-Toe !! &#9996;</h1>
+          <h1><i>Let's Play ,Tic-Tac-Toe !! </i>&#9996;</h1>
           <div className="options">
 
+<div className="result">
+
+</div>
           <div className="status">{status}</div>
           <button className="restart-button" onClick={() => this.restartGame()}>
             Restart

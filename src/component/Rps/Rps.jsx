@@ -44,7 +44,10 @@ class about extends Component {
   render() {
     return (
       <div className="about">
-        <h1>Rock, Paper, Scissors</h1>
+        <div>
+
+        <h1><i>Rock, Paper, Scissors</i></h1>
+        </div>
         <div className="choices">
           <button className='btn-g' onClick={() => this.handleUserChoice('Rock')}>Rock&#x270A;</button>
           <button className='btn-g' onClick={() => this.handleUserChoice('Paper')}>Paper&#x270B;</button>
@@ -59,6 +62,8 @@ class about extends Component {
             </p>
           )}
         </div>
+        <div>
+
         <button className="btnn-right btnn" id="btnn">
           <Link to="/tictac">
             <BiLeftArrowAlt  className="icon"/> 
@@ -71,6 +76,7 @@ class about extends Component {
             <BiRightArrowAlt  className="icon"/>
           </Link>
         </button>
+        </div>
       </div>
     );
   }

@@ -89,13 +89,15 @@ class card extends Component {
 
     return (
       <div className="book">
-        <div>
+        <div className='plan'>
 
-        <h1>Let's Check your Memory !!</h1>
+        <h1><i>Let's Check your Memory !!</i></h1>
         <div className="card-container">
           {cards.map((card, index) => this.renderCard(card, index))}
         </div>
         {gameWon && <p>Congratulations! You've won the game!</p>}
+        <div className="b-btn">
+
         <button className="btnn-right btnn" id="btnn">
           <Link to="/tictac">
             <BiLeftArrowAlt  className="icon"/> 
@@ -108,6 +110,7 @@ class card extends Component {
             <BiRightArrowAlt  className="icon"/>
           </Link>
         </button>
+        </div>
         </div>
       </div>
       

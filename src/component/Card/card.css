@@ -1,34 +1,40 @@
 /* App.css */
 
 .book {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   height: 100vh;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  padding: 10px;
 }
 
-h1 {
-  color: #333;
+.plan>h1 {
+  margin-top: 2.2rem;
+  font-size: 2.8rem;
+  color: #fff;
+
+ 
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(4, 100px); /* Adjust the number of columns as needed */
+  grid-template-columns: repeat(
+    4,
+    100px
+  ); /* Adjust the number of columns as needed */
   gap: 5px;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 3.5rem;
 }
 
 .card {
-  width: 70px;
-  height: 70px;
+  width: 6rem;
+  height: 6rem;
   background-color: #007bff;
+  border-radius: 5px;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,5 +53,9 @@ p {
   font-weight: bold;
   margin-top: 20px;
 }
-
-/* Add more styling as needed */
+.b-btn{
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  justify-content: space-between;
+}

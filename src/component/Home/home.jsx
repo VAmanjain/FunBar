@@ -1,7 +1,7 @@
-import "./first.css";
+import './home.css'
 import { Link } from "react-router-dom";
 import {BiRightArrowAlt} from "react-icons/bi";
-function FirstComp() {
+function Home() {
 
     
   return (
@@ -24,4 +24,4 @@ function FirstComp() {
     </>
   );
 }
-export default FirstComp;
+export default Home;
