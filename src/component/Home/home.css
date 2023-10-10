@@ -49,13 +49,9 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-.btnn{
-    background-color: transparent;
-    border: none;
-    
-}
+
+
 .btnn>a:hover  {
 background-color: rgba(3, 3, 151, 0.806) ;
 color: aliceblue !important;
@@ -69,9 +65,7 @@ font-size: 1.4rem;
 @media screen and (min-width:320px) {
     .head{
         font-size: 2.5rem;
-
     }
-
     .par{
         font-size: 1.6rem ;
     }
