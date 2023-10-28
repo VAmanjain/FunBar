@@ -8,7 +8,7 @@ function NavBar (){
         <h1 >
             Fun-Bar
         </h1>
-        <ul style={{position:"relative" ,top:"100rem"}}>
+        <ul style={{position:"relative" ,top:"-100rem"}}>
   <li><Link to="/">Home</Link></li>
   <li><Link to="/tictac">Tic-Tac</Link></li>
   <li><Link to="/card">Cards</Link></li>

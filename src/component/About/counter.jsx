@@ -37,9 +37,9 @@ function Counter(){
     return(
         <div>
         <div className="counter">
-            <div className="my">
+            <div className="my my-container">
                     <div className="photo">
-                         <img src="my.png" alt="" style={{width:"250px"}} />
+                         <img src="my.png" alt=""  />
                     </div>
                 <div className="data">
                     <h1>
@@ -52,9 +52,9 @@ function Counter(){
 
                     <h2>My socials</h2>
                     <div className="socails">
-    <a href="https://instagram.com/iamanjain17?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank">{<InstagramIcon/>}</a>
-    <a href="https://www.linkedin.com/in/aman-jain-416321256" target="_blank">{<LinkedInIcon/>}</a>
-    <a href="https://github.com/VAmanjain" target="_blank">{<GitHubIcon/>}</a>
+    <a href="https://instagram.com/iamanjain17?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank">{<InstagramIcon className="icon"/>}</a>
+    <a href="https://www.linkedin.com/in/aman-jain-416321256" target="_blank">{<LinkedInIcon className="icon" />}</a>
+    <a href="https://github.com/VAmanjain" target="_blank">{<GitHubIcon className="icon" />}</a>
 
              </div>
                 </div>

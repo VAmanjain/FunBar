@@ -48,7 +48,7 @@ class about extends Component {
 
         <h1><i>Rock, Paper, Scissors</i></h1>
         </div>
-        <div className="choices">
+        {/* <div className="choices">
           <button className='btn-g' onClick={() => this.handleUserChoice('Rock')}>Rock&#x270A;</button>
           <button className='btn-g' onClick={() => this.handleUserChoice('Paper')}>Paper&#x270B;</button>
           <button className='btn-g' onClick={() => this.handleUserChoice('Scissors')}>Scissors&#x270C;</button>
@@ -76,7 +76,8 @@ class about extends Component {
             <BiRightArrowAlt  className="icon"/>
           </Link>
         </button>
-        </div>
+        </div> */}
+        <h1 style={{width:"100%",height:"60vh",display:"flex",alignItems:"center" , justifyContent:"center"}}>Currently Game facing some functional Issue </h1>
       </div>
     );
   }
