@@ -1,86 +1,101 @@
-import React, { Component } from 'react';
-import './Rps.css';
-
-import {BiRightArrowAlt} from "react-icons/bi";
-import {BiLeftArrowAlt} from "react-icons/bi";
+import React, { useState } from "react";
+import "./Rps.css";
+import { BiRightArrowAlt } from "react-icons/bi";
+import { BiLeftArrowAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
-class about extends Component {
-  constructor() {
-    super();
-    this.state = {
-      userChoice: null,
-      computerChoice: null,
-      result: '',
-    };
-  }
+import VS from "../../Assests/Rps.png";
+import AI from "../../Assests/Computer.png"
+import USER from '../../Assests/User.png'
 
-  handleUserChoice(choice) {
-    const computerChoices = ['Rock ', 'Paper', 'Scissors '];
-    const computerChoice = computerChoices[Math.floor(Math.random() * 3)];
+const Rps = () => {
+  const [userChoice, setUserChoice] = useState("Paper");
+  const [computerChoice, setComputerChoice] = useState("Paper");
+  const [result, setResult] = useState(null);
 
-    const result = this.calculateResult(choice, computerChoice);
+  const choices = ["Rock", "Paper", "Scissors"];
 
-    this.setState({
-      userChoice: choice,
-      computerChoice: computerChoice,
-      result: result,
-    });
-  }
+  const handleChoice = (choice) => {
+    const computerChoice = choices[Math.floor(Math.random() * 3)];
 
-  calculateResult(userChoice, computerChoice) {
-    if (userChoice === computerChoice) {
-      return 'It\'s a tie!';
+    let gameResult;
+
+    if (choice === computerChoice) {
+      gameResult = "Tie";
     } else if (
-      (userChoice === 'Rock' && computerChoice === 'Scissors') ||
-      (userChoice === 'Paper' && computerChoice === 'Rock') ||
-      (userChoice === 'Scissors' && computerChoice === 'Paper')
+      (choice === "Rock" && computerChoice === "Paper") ||
+      (choice === "Paper" && computerChoice === "Scissors") ||
+      (choice === "Scissors" && computerChoice === "Rock")
     ) {
-      return 'You win!';
+      gameResult = "You";
     } else {
-      return 'Computer wins!';
+      gameResult = "Computer";
     }
-  }
 
-  render() {
-    return (
-      <div className="about">
-        <div>
+    setUserChoice(choice);
+    setComputerChoice(computerChoice);
+    setResult(gameResult);
+  };
 
-        <h1><i>Rock, Paper, Scissors</i></h1>
-        </div>
-        {/* <div className="choices">
-          <button className='btn-g' onClick={() => this.handleUserChoice('Rock')}>Rock&#x270A;</button>
-          <button className='btn-g' onClick={() => this.handleUserChoice('Paper')}>Paper&#x270B;</button>
-          <button className='btn-g' onClick={() => this.handleUserChoice('Scissors')}>Scissors&#x270C;</button>
-        </div>
-        <div className="result">
-          {this.state.userChoice && this.state.computerChoice && (
-            <p>
-              You chose {this.state.userChoice}.<br />
-              Computer chose {this.state.computerChoice}.<br />
-              {this.state.result}
-            </p>
-          )}
-        </div>
-        <div>
+  const playAgain = () => {
+    console.log("play again");
+    setUserChoice(null);
+    setComputerChoice(null);
+    setResult(null);
+  };
 
+  return (
+    <div className="about">
+      <div>
+        <h1>
+          <i>Rock, Paper, Scissors</i>
+        </h1>
+      </div>
+      <div className="room">
+        <div className="computer">
+          <p>{computerChoice}</p>
+          <img src={AI} alt="" />
+          <p>Computer</p>
+        </div>
+        <div className="vs">
+          <img src={VS} alt="" />
+        </div>
+        <div className="computer">
+          <p>{userChoice}</p>
+          <img src={USER} alt="" />
+          <p>Player</p>
+        </div>
+      </div>
+      <div className="winner">
+        <div>WINNER:</div>
+        <div>{result}</div>
+      </div>
+      <div className="choices">
+        {userChoice === null ? (
+          <div className="choices">
+            <button onClick={() => handleChoice("Rock")}>Rock</button>
+            <button onClick={() => handleChoice("Paper")}>Paper</button>
+            <button onClick={() => handleChoice("Scissors")}>Scissors</button>
+          </div>
+        ) : (
+          <button onClick={() => playAgain()}>Play Again</button>
+        )}
+      </div>
+      <div>
         <button className="btnn-right btnn" id="btnn">
-          <Link to="/tictac">
-            <BiLeftArrowAlt  className="icon"/> 
+          <Link to="/card">
+            <BiLeftArrowAlt className="icon" />
             Pervious
           </Link>
         </button>
-          <button className="btnn-right btnn" id="btnn">
+        <button className="btnn-right btnn" id="btnn">
           <Link to="/counter">
             Next
-            <BiRightArrowAlt  className="icon"/>
+            <BiRightArrowAlt className="icon" />
           </Link>
         </button>
-        </div> */}
-        <h1 style={{width:"100%",height:"60vh",display:"flex",alignItems:"center" , justifyContent:"center"}}>Currently Game facing some functional Issue </h1>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
-export default about;
+export default Rps;
