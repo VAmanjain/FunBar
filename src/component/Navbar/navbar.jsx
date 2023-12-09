@@ -12,8 +12,8 @@ function NavBar (){
   <li><Link to="/">Home</Link></li>
   <li><Link to="/tictac">Tic-Tac</Link></li>
   <li><Link to="/card">Cards</Link></li>
-  <li><Link to="/about">Rps</Link></li>
-  <li><Link to="/counter">About</Link></li>
+  <li><Link to="/rps">Rps</Link></li>
+  <li><Link to="/about">About</Link></li>
 
 
 
@@ -22,8 +22,8 @@ function NavBar (){
   <li><Link to="/">Home</Link></li>
   <li><Link to="/tictac">Tic-Tac</Link></li>
   <li><Link to="/card">Cards</Link></li>
-  <li><Link to="/about">Rps</Link></li>
-  <li><Link to="/counter">About</Link></li>
+  <li><Link to="/rps">Rps</Link></li>
+  <li><Link to="/about">About</Link></li>
 
 
 

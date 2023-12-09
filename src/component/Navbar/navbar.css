@@ -10,8 +10,7 @@
   align-items: center;
   color: #fbfcfd;
   width: 100%;
-  padding: 1rem 0 !important;
-  
+  padding: 1rem !important;
 }
 
 ul {
@@ -29,22 +28,22 @@ li a {
   display: block;
   color: rgb(247, 249, 254);
   text-align: center;
-margin-right: 2rem;
+  margin-right: 2rem;
   text-decoration: none;
 }
 
 li a:hover {
   border-bottom: 1px solid white;
 }
-.nav>h1{
+.nav > h1 {
   padding-left: 1rem;
   color: white !important;
 }
 
-.show{
+.show {
   display: flex;
   flex-direction: column;
- 
+
   background-color: black;
   padding: 2rem;
   position: relative;
