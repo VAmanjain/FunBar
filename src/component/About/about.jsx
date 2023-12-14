@@ -15,7 +15,7 @@ function Counter(){
         if (count<10){
         setCount(count + 1);
         }
-        if(count==10){
+        if(count===10){
             setHeading("Thanks for your support 😊😊");
         }
         else if(count<10){
