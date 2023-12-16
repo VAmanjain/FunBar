@@ -1,51 +1,97 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  height: 70px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #29339b;
 }
 
-.nav{
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem;
 }
 
-.icon{
-    margin: 1.5rem;
+.icon {
+  margin: 1.5rem;
 }
 
-.icon span{
-    font-size: 2rem;
-    font-weight: 600;
+.icon span {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-a{
-    text-decoration: none;
-   
+a {
+  text-decoration: none;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-.list{
-    width: 30%;
+.menu-icon {
+  padding: 2rem;
+  margin-right: 5rem;
 }
 
-.list ul{
-    width: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.openMenu,
+.closeMenu {
+  color: #fff;
+  font-size: 1.8rem;
 }
 
-li a{
+.closeMenu {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+.list {
+  background: url("../../Assests/blurry.svg");
+  width: 30%;
+  height: 100vh;
+  z-index: 2000;
+  padding: 5rem;
+  position: absolute;
+  right: 0%;
+  top: -100rem;
+  transition: 1s ease-in-out;
+}
+
+.showList {
+  right: 0%;
+  top: 0%;
+}
+
+.list ul {
+  font-size: 2.5rem;
+  display: grid;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+li a {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+li a:active {
+  color: aqua;
+}
+
+
+@media screen and (max-width: 500px) {
+  .list {
+    width: 80%;
+  }
+  .list ul {
     font-size: 1.2rem;
-    color: #fff ;
-}
-
-li a:active{
-    color: aqua;
+  }
 }
