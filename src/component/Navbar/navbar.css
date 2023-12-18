@@ -61,7 +61,7 @@ li {
   position: absolute;
   right: 0%;
   top: -100rem;
-  transition: 1s ease-in-out;
+  transition: 2s ease-in-out;
 }
 
 .showList {

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import './card.css';
-import {BiRightArrowAlt} from "react-icons/bi";
-import {BiLeftArrowAlt} from "react-icons/bi";
+import React, { Component } from "react";
+import "./card.css";
+import { BiRightArrowAlt } from "react-icons/bi";
+import { BiLeftArrowAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
 class card extends Component {
   constructor() {
@@ -14,7 +14,7 @@ class card extends Component {
   }
 
   generateCards() {
-    const cardValues = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+    const cardValues = ["A", "B", "C", "D", "E", "F", "G", "H"];
     const cards = [];
     for (let i = 0; i < cardValues.length; i++) {
       cards.push({ id: i * 2, value: cardValues[i] });
@@ -70,15 +70,16 @@ class card extends Component {
 
   renderCard(card, index) {
     const { flippedIndices, matchedPairs } = this.state;
-    const isFlipped = flippedIndices.includes(index) || matchedPairs.includes(card.value);
+    const isFlipped =
+      flippedIndices.includes(index) || matchedPairs.includes(card.value);
 
     return (
       <div
         key={index}
-        className={`card ${isFlipped ? 'flipped' : ''}`}
+        className={`card ${isFlipped ? "flipped" : ""}`}
         onClick={() => this.handleCardClick(index)}
       >
-        {isFlipped ? card.value : '?'}
+        {isFlipped ? card.value : "?"}
       </div>
     );
   }
@@ -89,31 +90,24 @@ class card extends Component {
 
     return (
       <div className="book">
-        <div className='plan'>
-
-        <h1><i>Let's Check your Memory !!</i></h1>
-        <div className="card-container">
-          {cards.map((card, index) => this.renderCard(card, index))}
-        </div>
-        {gameWon && <p>Congratulations! You've won the game!</p>}
-        <div className="b-btn">
-
-        <button className="btnn-right btnn" id="btnn">
-          <Link to="/tictac">
-            <BiLeftArrowAlt  className="icon"/> 
-            Pervious
-          </Link>
-        </button>
-          <button className="btnn-right btnn" id="btnn">
-          <Link to="/about">
-            Next
-            <BiRightArrowAlt  className="icon"/>
-          </Link>
-        </button>
-        </div>
+        <div className="plan">
+          <h1>
+            <i>Let's Check your Memory !!</i>
+          </h1>
+          <div className="card-container">
+            {cards.map((card, index) => this.renderCard(card, index))}
+          </div>
+          {gameWon && <p>Congratulations! You've won the game!</p>}
+          <div className="b-btn">
+            <button className="btnn-right btnn" id="btnn">
+              <Link to="/tictac">Pervious</Link>
+            </button>
+            <button className="btnn-right btnn" id="btnn">
+              <Link to="/about">Next</Link>
+            </button>
+          </div>
         </div>
       </div>
-      
     );
   }
 }

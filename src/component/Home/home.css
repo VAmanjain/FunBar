@@ -19,11 +19,11 @@
     
 }
 .head{
-    font-size: 5.5rem;
+    font-size: 7.5rem;
     color:#fff;
 }
 .par{
-    font-size: 2rem;
+    font-size: 1rem;
     padding-bottom: 0.8rem;
     color: #fff;
 }
@@ -34,23 +34,29 @@ span{
 }
 .btnn>a{
     text-decoration: none;
-    color: rgb(255, 255, 255) !important;
-    border: 2px solid rgba(255, 255, 255, 0.922);
+    color: #29339b !important;
+    background-color: #f1faef !important ;
+    border: 2px solid #212529;
     word-spacing: 0.3rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
-    border-radius: 7rem;
+    border-radius: 120px;
     padding: 1rem  2rem 1rem 2rem;
     background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s ease-in-out;
 }
 
 
 .btnn>a:hover  {
 background-color:#fff;
 color:rgba(3, 3, 151, 0.806) !important;
+scale: 1.05;
+}
+.btnn>a:active{
+scale: 0.95;
 }
 .btnn>.icon{
 font-size: 1.4rem;

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./tictac.css";
-import {BiRightArrowAlt} from "react-icons/bi";
-import {BiLeftArrowAlt} from "react-icons/bi";
+import { BiRightArrowAlt } from "react-icons/bi";
+import { BiLeftArrowAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { grey } from "@mui/material/colors";
 class tictac extends Component {
-const 
+  const;
 
   constructor() {
     super();
@@ -80,16 +80,18 @@ const
     return (
       <div className="tictac">
         <div className="game">
-          <h1><i>Let's Play ,Tic-Tac-Toe !! </i>&#9996;</h1>
+          <h1>
+            <i>Let's Play ,Tic-Tac-Toe !! </i>&#9996;
+          </h1>
           <div className="options">
-
-<div className="result">
-
-</div>
-          <div className="status">{status}</div>
-          <button className="restart-button" onClick={() => this.restartGame()}>
-            Restart
-          </button>
+            <div className="result"></div>
+            <div className="status">{status}</div>
+            <button
+              className="restart-button"
+              onClick={() => this.restartGame()}
+            >
+              Restart
+            </button>
           </div>
           <div className="board">
             <div className="board-row">
@@ -109,17 +111,11 @@ const
             </div>
           </div>
         </div>
-          <button className="btnn-right btnn" id="btnn">
-          <Link to="/">
-            <BiLeftArrowAlt  className="icon"/> 
-            Pervious
-          </Link>
+        <button className="btnn-right btnn" id="btnn">
+          <Link to="/">Pervious</Link>
         </button>
-          <button className="btnn-right btnn" id="btnn">
-          <Link to="/card">
-            Next
-            <BiRightArrowAlt  className="icon"/>
-          </Link>
+        <button className="btnn-right btnn" id="btnn">
+          <Link to="/card">Next</Link>
         </button>
       </div>
     );

@@ -4,8 +4,8 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import { BiLeftArrowAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import VS from "../../Assests/Rps.png";
-import AI from "../../Assests/Computer.png"
-import USER from '../../Assests/User.png'
+import AI from "../../Assests/Computer.png";
+import USER from "../../Assests/User.png";
 
 const Rps = () => {
   const [userChoice, setUserChoice] = useState("Paper");
@@ -82,16 +82,10 @@ const Rps = () => {
       </div>
       <div>
         <button className="btnn-right btnn" id="btnn">
-          <Link to="/card">
-            <BiLeftArrowAlt className="icon" />
-            Pervious
-          </Link>
+          <Link to="/card">Pervious</Link>
         </button>
         <button className="btnn-right btnn" id="btnn">
-          <Link to="/counter">
-            Next
-            <BiRightArrowAlt className="icon" />
-          </Link>
+          <Link to="/counter">Next</Link>
         </button>
       </div>
     </div>
