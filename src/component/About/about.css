@@ -92,7 +92,6 @@ img {
 
 .data > h2 {
   color: #fff;
-  margin-top: 2rem;
 }
 
 .socails > a {
@@ -106,6 +105,42 @@ a.icon {
 a > .icon:hover {
   transform: translate(0, -5px);
   transition: 0.2s ease-in-out;
+}
+
+.ig {
+  color: #ba34b3;
+}
+
+.ln {
+  color: #3a3aff;
+}
+
+.gh {
+  color: #141414;
+}
+
+.star-box {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  color: #fff;
+  padding: 4px;
+  margin: 4px;
+  width: 3.5rem;
+  height: 3rem;
+  border: 2px solid #fff;
+  font-size: 1.8rem;
+  transition: 0.2s ease-in-out;
+}
+
+.star:hover{
+  scale: 0.8;
+  
 }
 
 @media screen and (max-width: 420px) {

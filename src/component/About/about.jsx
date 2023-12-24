@@ -3,6 +3,7 @@ import "./about.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { FaRegStar } from "react-icons/fa";
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -45,22 +46,28 @@ function Counter() {
               &#x1F447;
             </p>
 
+<div className="star-box">
+  
+  STAR ME <a href="https://github.com/VAmanjain/FunBar" target="_blank" >
+<FaRegStar className="star"/>
+  </a>
+</div>
             <h2>My socials</h2>
             <div className="socails">
               <a
                 href="https://instagram.com/iamanjain17?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="
                 target="_blank"
               >
-                {<InstagramIcon className="icon" />}
+                {<InstagramIcon className="icon ig " />}
               </a>
               <a
                 href="https://www.linkedin.com/in/aman-jain-416321256"
                 target="_blank"
               >
-                {<LinkedInIcon className="icon" />}
+                {<LinkedInIcon className="icon ln " />}
               </a>
               <a href="https://github.com/VAmanjain" target="_blank">
-                {<GitHubIcon className="icon" />}
+                {<GitHubIcon className="icon gh " />}
               </a>
             </div>
           </div>

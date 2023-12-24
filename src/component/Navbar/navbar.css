@@ -47,6 +47,11 @@ li {
   font-size: 1.8rem;
 }
 
+.openMenu:hover,
+.closeMenu:hover{
+cursor: pointer;
+}
+
 .closeMenu {
   position: absolute;
   top: 10%;

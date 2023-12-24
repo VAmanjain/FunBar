@@ -85,7 +85,7 @@ const Rps = () => {
           <Link to="/card">Pervious</Link>
         </button>
         <button className="btnn-right btnn" id="btnn">
-          <Link to="/counter">Next</Link>
+          <Link to="/about">Next</Link>
         </button>
       </div>
     </div>
