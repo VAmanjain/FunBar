@@ -115,7 +115,7 @@ class tictac extends Component {
           <Link to="/">Pervious</Link>
         </button>
         <button className="btnn-right btnn" id="btnn">
-          <Link to="/card">Next</Link>
+          <Link to="/rps">Next</Link>
         </button>
       </div>
     );
