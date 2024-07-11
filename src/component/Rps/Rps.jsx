@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./Rps.css";
-import { BiRightArrowAlt } from "react-icons/bi";
-import { BiLeftArrowAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import VS from "../../Assests/Rps.png";
 import AI from "../../Assests/Computer.png";
@@ -44,7 +42,7 @@ const Rps = () => {
   };
 
   return (
-    <div className="about">
+    <div className="rps">
       <div>
         <h1>
           <i>Rock, Paper, Scissors</i>

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "./card.css";
-import { BiRightArrowAlt } from "react-icons/bi";
-import { BiLeftArrowAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
 class card extends Component {
   constructor() {

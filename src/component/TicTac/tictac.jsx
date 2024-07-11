@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import "./tictac.css";
-import { BiRightArrowAlt } from "react-icons/bi";
-import { BiLeftArrowAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import { grey } from "@mui/material/colors";
 class tictac extends Component {
   const;
 

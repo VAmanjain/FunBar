@@ -6,6 +6,8 @@
 .nav {
   height: 70px;
   width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   position: relative;
   margin-bottom: 2rem;
 }
@@ -57,15 +59,16 @@ cursor: pointer;
   right: 10%;
 }
 .list {
-  background: url("../../Assests/greybg.svg");
-  width: 30%;
+  background: url("../../Assests/blurry.svg");
+  background-position: 70%;
+  width: 20%;
   height: 100vh;
-  z-index: 2000;
+  z-index: 200;
   padding: 5rem;
   position: absolute;
   right: 0%;
   top: -100rem;
-  transition: 2s ease-in-out;
+  transition: .9s all  ease-in-out ;
 }
 
 .showList {
