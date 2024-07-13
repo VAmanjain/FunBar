@@ -48,7 +48,7 @@
 .board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
-  gap: 22px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -60,8 +60,8 @@
   border-radius: 10px;
   margin-top: 12px;
   margin-bottom: 12px;
-  width: 7.2rem;
-  height: 7.2rem;
+  width: 6.2rem;
+  height: 6.2rem;
   font-size: 36px;
   font-weight: bold;
   display: flex;
@@ -100,6 +100,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
+  margin:  20px 0;
 }
 
 
@@ -120,8 +121,8 @@
   }
 
   .square {
-    width: 5.2rem;
-    height: 5.2rem;
+    width: 4.5rem !important;
+    height: 4.5rem !important;
     font-size: 36px;
     font-weight: bold;
     display: flex;
@@ -167,8 +168,8 @@
   }
 
   .square {
-    width: 6.2rem;
-    height: 6.2rem;
+    width: 5.2rem;
+    height: 5.2rem;
     font-size: 36px;
     font-weight: bold;
     display: flex;
