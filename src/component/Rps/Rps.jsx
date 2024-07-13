@@ -5,6 +5,9 @@ import VS from "../../Assests/Rps.png";
 import AI from "../../Assests/Computer.png";
 import USER from "../../Assests/User.png";
 
+import EastIcon from "@mui/icons-material/East";
+import WestIcon from "@mui/icons-material/West";
+
 const Rps = () => {
   const [userChoice, setUserChoice] = useState("Paper");
   const [computerChoice, setComputerChoice] = useState("Paper");
@@ -43,11 +46,11 @@ const Rps = () => {
 
   return (
     <div className="rps">
-      <div>
+      
         <h1>
           <i>Rock, Paper, Scissors</i>
         </h1>
-      </div>
+      
       <div className="room">
         <div className="computer">
           <p>{computerChoice}</p>
@@ -79,12 +82,16 @@ const Rps = () => {
         )}
       </div>
       <div>
-        <button className="btnn-right btnn" id="btnn">
-          <Link to="/tictac">Pervious</Link>
-        </button>
-        <button className="btnn-right btnn" id="btnn">
-          <Link to="/card">Next</Link>
-        </button>
+        <div className="links">
+          <Link to="/tictac" className="button" id="btnn">
+            <WestIcon className="arrow_icon" />
+            <span>Tic Tac Toe</span>
+          </Link>
+          <Link to="/card" className="button" id="btnn">
+            <span>Card Puzzle</span>
+            <EastIcon className="arrow_icon" />
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -39,7 +39,13 @@ function About() {
             <div className="dp">
               <img src="myimg.jpg" alt="" />
             </div>
-            <div className="name">Aman Jain</div>
+            <a
+                href="https://aman-protfolio.netlify.app"
+                target="_blank"
+              >
+                <div className="name">Aman Jain</div>
+              </a>
+            
             <div className="des">Front End Developer</div>
             <div className="socails">
               <a href="https://x.com/Jain17Vaman" target="_blank">

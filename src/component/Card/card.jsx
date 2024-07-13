@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import "./card.css";
 import { Link } from "react-router-dom";
+
+
+import EastIcon from "@mui/icons-material/East";
+import WestIcon from "@mui/icons-material/West";
+
 class card extends Component {
   constructor() {
     super();
@@ -96,14 +101,16 @@ class card extends Component {
             {cards.map((card, index) => this.renderCard(card, index))}
           </div>
           {gameWon && <p>Congratulations! You've won the game!</p>}
-          <div className="b-btn">
-            <button className="btnn-right btnn" id="btnn">
-              <Link to="/tictac">Pervious</Link>
-            </button>
-            <button className="btnn-right btnn" id="btnn">
-              <Link to="/about">Next</Link>
-            </button>
-          </div>
+          <div className="links">
+          <Link to="/rps" className="button" id="btnn">
+            <WestIcon className="arrow_icon" />
+            <span>Rock Paper Sicssors</span>
+          </Link>
+          <Link to="/about" className="button" id="btnn">
+            <span>About</span>
+            <EastIcon className="arrow_icon" />
+          </Link>
+        </div>
         </div>
       </div>
     );

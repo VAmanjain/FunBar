@@ -24,7 +24,7 @@
   ); /* Adjust the number of columns as needed */
   gap: 5px;
   justify-content: center;
-  margin-top: 3.5rem;
+  margin: 2rem 0;
 }
 
 .card {

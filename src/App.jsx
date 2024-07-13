@@ -5,6 +5,8 @@ import Rps from "./component/Rps/Rps";
 import Tictac from "./component/TicTac/tictac";
 import Card from "./component/Card/card";
 import Home from "./component/Home/home";
+import Footer from "./component/Footer/footer";
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
           <Route path="/rps" element={<Rps />} />
           <Route path="/card" element={<Card />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

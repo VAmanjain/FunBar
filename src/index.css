@@ -1,4 +1,7 @@
 body {
     background: url("../src/Assests/blurry.svg");
     max-width: 100%;
+    max-height: 100vh !important;
+    background-repeat: no-repeat;
+  background-color: #6b71f2;
   }

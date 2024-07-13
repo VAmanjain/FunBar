@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import "./tictac.css";
 import { Link } from "react-router-dom";
+import EastIcon from "@mui/icons-material/East";
+import WestIcon from "@mui/icons-material/West";
+
 class tictac extends Component {
   const;
-
   constructor() {
     super();
     this.state = {
@@ -108,12 +110,16 @@ class tictac extends Component {
             </div>
           </div>
         </div>
-        <button className="btnn-right btnn" id="btnn">
-          <Link to="/">Pervious</Link>
-        </button>
-        <button className="btnn-right btnn" id="btnn">
-          <Link to="/rps">Next</Link>
-        </button>
+        <div className="links">
+          <Link to="/" className="button" id="btnn">
+            <WestIcon className="arrow_icon" />
+            <span>Home</span>
+          </Link>
+          <Link to="/rps" className="button" id="btnn">
+            <span>Rock Paper Scissor</span>
+            <EastIcon className="arrow_icon" />
+          </Link>
+        </div>
       </div>
     );
   }

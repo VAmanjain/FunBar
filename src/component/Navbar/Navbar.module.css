@@ -1,0 +1,139 @@
+
+* {
+  --text: none;
+  --background: #fff;
+  --secondary: #e6e5e5;
+  --accent: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--background);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  /* navbar */
+  .navbar {
+    
+    background: url("../../Assests/blurry.svg");
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-height: 70px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  }
+  
+  
+  /* logo  */
+  .logo {
+    font-size: 30px;
+    margin-left: 2rem;
+    color: #fff;
+  }
+  
+  
+  /* ul  */
+  .navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .navLink {
+    position: relative;
+    text-decoration: none;
+    padding: .6rem;
+  }
+  
+  .navLink::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px; 
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent); 
+    transform: scaleX(0); 
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+  
+  .navLink:hover::before {
+    transform: scaleX(1); 
+    transform-origin: bottom left;
+  } 
+  
+  /* media queries */
+  
+  @media screen and (max-width: 780px){
+    
+    /* hamburger */
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .bar {
+          background-color: var(--background);
+          width: 20px;
+          height: 3px;
+          display: block;
+          margin: 5px;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+          
+      }
+  
+    /* adding active class to the bars  */
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(135deg);
+      
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-135deg);
+    }
+  
+  
+    /* navMenu */
+  
+    .navMenu{
+      position: absolute;
+      flex-direction: column;
+      gap: 0;
+      top: 70px;
+      left: -100%;
+      text-align: start;
+      width: 100%;
+      transition: 0.7s ease-in-out;
+      background: url("../../Assests/blurry.svg");
+      padding: 10px;
+      z-index: 1;
+    }
+  
+    .navMenu.active{
+      left: 0;
+      z-index: 1001;
+    }
+  
+    .navMenu li {
+      margin: 16px 0;
+    }
+  }
